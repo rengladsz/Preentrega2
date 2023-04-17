@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Abstract;
+    src: url(./fonts/aAbstractGroovy.ttf);
+}
+@font-face {
+    font-family: SourceSans;
+    src: url(./fonts/SourceSansPro-Light.ttf);
+} 
+
+
+
+
+.navbar-brand{
+    font-family: Abstract;
+    font-size: 60px;
+    color: black;
+}
+.nav-link{
+    font-family: SourceSans;
+    font-size: 20px;
+}
+
+/* slideshow */
+
+.slide img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px !important;
+    margin-top: 30px;
+    
+}
+.slide{
+    width: 100vh;
+    margin: 0;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    margin: auto;
+    font-family: SourceSans;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+
+
+
+
+/* css home 1024px */
+/* header{
+    background-color: rgb(228, 201, 167);
+    width: 97%;
+    height: 80px;
+    font-size: 24px;
+    font-family: SourceSans;
+    text-transform: capitalize;
+    padding: 20px;
+}
+.logo{
+    float:left;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: Abstract;
+
+}
+.logo span{
+    color: black
+}
+.barra{
+    float: right;
+    
+}
+
+   
+.barra li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+    
+}
+.barra a{
+    text-decoration: none;
+    color: white
+    
+}
+.barra a:hover{
+    color: #333
+} */
+
+/* css productos */
+
+/* header{
+    background-color: rgb(228, 201, 167);
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-family: SourceSans;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.logo{
+    float: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Abstract;
+    margin-bottom: 10px;
+}
+.logo span{
+    color: black
+}
+.barra{
+    float: none;
+    text-align: center;
+    
+}
+
+   
+.barra li{
+    list-style: none;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.barra a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    
+}
+.barra a:hover{
+    color: #333
+} */
+
+/* productos 1024px */
+
+
+
+
+
+
+
+
+
+
+
+ /* .productos{
+    height: 800px;
+    width: 97%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 50px 250px 50px 250px 50px;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "texto1 texto2 texto3"
+    "img4 img5 img6"
+    "texto4 texto5 texto6"
+    "img7 img8 img9"
+    "texto7 texto8 texto9";
+    grid-gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+  }
+ 
+.img:hover{
+    transform: scale(1.09);
+    transition: all 0.9s;
+}
+
+.img1{
+    grid-area: img1;
+    background-image: url(img/cenicero1.JPG);
+    background-size: cover;
+    background-position: center; 
+    
+}
+.texto1{
+    grid-area: texto1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img2{
+    grid-area: img2;
+    background-image: url(img/cenicero2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto2{
+    grid-area: texto2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img3{
+    grid-area: img3;
+    background-image: url(img/cenicero3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.texto3{
+    grid-area: texto3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img4{
+    grid-area: img4;
+    background-image: url(img/cenicero4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.texto4{
+    grid-area: texto4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img5{
+    grid-area: img5;
+    background-image: url(img/combo.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto5{
+    grid-area: texto5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img6{
+    grid-area: img6;
+    background-image: url(img/cuenco.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto6{
+    grid-area: texto6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img7{
+    grid-area: img7;
+    background-image: url(img/pipas1.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto7{
+    grid-area: texto7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img8{
+    grid-area: img8;
+    background-image: url(img/pipas2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto8{
+    grid-area: texto8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img9{
+    grid-area: img9;
+    background-image: url(img/pipas3.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto9{
+    grid-area: texto9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}  */
+
+/* @media only screen and (min-width:320px) and (max-width:480px){
+    .productos{
+        grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "img1"
+    "texto1"
+    "img2"
+    "texto2"
+    "img3"
+    "texto3"
+    "img4"
+    "texto4"
+    "img5"
+    "texto5"
+    "img6"
+    "texto6"
+    "img7"
+    "texto7"
+    "img8"
+    "texto8"
+    "img9"
+    "texto9";
+    grid-gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+} */
+
+
+.productos{
+    height: auto;
+    width: 97%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "img1"
+    "texto1"
+    "img2"
+    "texto2"
+    "img3"
+    "texto3"
+    "img4"
+    "texto4"
+    "img5"
+    "texto5"
+    "img6"
+    "texto6"
+    "img7"
+    "texto7"
+    "img8"
+    "texto8"
+    "img9"
+    "texto9";
+    grid-gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .img {
+    height: 120px;
+  }
+  .texto {
+    height: 60px;
+    font-size: 16px;
+  }
+  .img:hover{
+    transform: scale(1.09);
+    transition: all 0.9s;
+}
+
+.img1{
+    grid-area: img1;
+    background-image: url(img/cenicero1.JPG);
+    background-size: cover;
+    background-position: center; 
+    height: 120px;
+}
+
+.texto1{
+    grid-area: texto1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 60px;
+    font-size: 16px;
+}
+
+.img2{
+    grid-area: img2;
+    background-image: url(img/cenicero2.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+}
+
+.texto2{
+    grid-area: texto2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 60px;
+    font-size: 16px;
+}
+
+.img3{
+    grid-area: img3;
+    background-image: url(img/cenicero3.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+}
+
+.texto3{
+    grid-area: texto3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 60px;
+    font-size: 16px;
+}
+.img4{
+    grid-area: img4;
+    background-image: url(img/cenicero4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.texto4{
+    grid-area: texto4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img5{
+    grid-area: img5;
+    background-image: url(img/combo.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto5{
+    grid-area: texto5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img6{
+    grid-area: img6;
+    background-image: url(img/cuenco.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto6{
+    grid-area: texto6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img7{
+    grid-area: img7;
+    background-image: url(img/pipas1.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto7{
+    grid-area: texto7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img8{
+    grid-area: img8;
+    background-image: url(img/pipas2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto8{
+    grid-area: texto8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img9{
+    grid-area: img9;
+    background-image: url(img/pipas3.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.texto9{
+    grid-area: texto9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+} 
+
+
+
+
+
+
