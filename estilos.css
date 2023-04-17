@@ -16,6 +16,7 @@
 
 .navbar{
     background-color: bisque;
+    width: 100%;
 }
 
 .navbar-brand{
@@ -188,35 +189,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }  */
-
-/* @media only screen and (min-width:320px) and (max-width:480px){
-    .productos{
-        grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: 
-    "img1"
-    "texto1"
-    "img2"
-    "texto2"
-    "img3"
-    "texto3"
-    "img4"
-    "texto4"
-    "img5"
-    "texto5"
-    "img6"
-    "texto6"
-    "img7"
-    "texto7"
-    "img8"
-    "texto8"
-    "img9"
-    "texto9";
-    grid-gap: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    }
-} */
 
 
 .productos{
@@ -425,7 +397,7 @@
           }
       }
 
-
+/* css sobrehumo */
 
 
 
