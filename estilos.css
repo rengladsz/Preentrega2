@@ -14,6 +14,9 @@
 
 
 
+.navbar{
+    background-color: bisque;
+}
 
 .navbar-brand{
     font-family: Abstract;
@@ -54,103 +57,9 @@
 
 
 
-/* css home 1024px */
-/* header{
-    background-color: rgb(228, 201, 167);
-    width: 97%;
-    height: 80px;
-    font-size: 24px;
-    font-family: SourceSans;
-    text-transform: capitalize;
-    padding: 20px;
-}
-.logo{
-    float:left;
-    color: white;
-    font-weight: bold;
-    font-size: 70px;
-    font-family: Abstract;
 
-}
-.logo span{
-    color: black
-}
-.barra{
-    float: right;
-    
-}
-
-   
-.barra li{
-    list-style: none;
-    display: inline-block;
-    margin-top: 20px;
-    
-}
-.barra a{
-    text-decoration: none;
-    color: white
-    
-}
-.barra a:hover{
-    color: #333
-} */
-
-/* css productos */
-
-/* header{
-    background-color: rgb(228, 201, 167);
-    width: 100%;
-    height: auto;
-    font-size: 16px;
-    font-family: SourceSans;
-    text-transform: capitalize;
-    padding: 10px;
-}
-.logo{
-    float: none;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: Abstract;
-    margin-bottom: 10px;
-}
-.logo span{
-    color: black
-}
-.barra{
-    float: none;
-    text-align: center;
-    
-}
-
-   
-.barra li{
-    list-style: none;
-    display: block;
-    margin-top: 10px;
-    text-align: center;
-    
-}
-.barra a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    
-}
-.barra a:hover{
-    color: #333
-} */
 
 /* productos 1024px */
-
-
-
-
-
-
-
 
 
 
@@ -315,7 +224,7 @@
     width: 97%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px;
     grid-template-areas: 
     "img1"
     "texto1"
@@ -340,7 +249,8 @@
     margin-bottom: 20px;
   }
   .img {
-    height: 120px;
+    height: 200px;
+    
   }
   .texto {
     height: 60px;
@@ -356,7 +266,7 @@
     background-image: url(img/cenicero1.JPG);
     background-size: cover;
     background-position: center; 
-    height: 120px;
+    height: 200px;
 }
 
 .texto1{
@@ -372,7 +282,7 @@
     background-image: url(img/cenicero2.JPG);
     background-size: cover;
     background-position: center;
-    height: 120px;
+    height: 200px;
 }
 
 .texto2{
@@ -388,7 +298,7 @@
     background-image: url(img/cenicero3.jpeg);
     background-size: cover;
     background-position: center;
-    height: 120px;
+    height: 200px;
 }
 
 .texto3{
@@ -403,6 +313,7 @@
     background-image: url(img/cenicero4.jpeg);
     background-size: cover;
     background-position: center;
+    height: 200px;
 }
 .texto4{
     grid-area: texto4;
@@ -414,6 +325,7 @@
     background-image: url(img/combo.JPG);
     background-size: cover;
     background-position: center;
+    height: 200px;
 }
 .texto5{
     grid-area: texto5;
@@ -425,6 +337,7 @@
     background-image: url(img/cuenco.JPG);
     background-size: cover;
     background-position: center;
+    height: 200px;
 }
 .texto6{
     grid-area: texto6;
@@ -436,6 +349,7 @@
     background-image: url(img/pipas1.JPG);
     background-size: cover;
     background-position: center;
+    height: 200px;
 }
 .texto7{
     grid-area: texto7;
@@ -447,6 +361,7 @@
     background-image: url(img/pipas2.JPG);
     background-size: cover;
     background-position: center;
+    height: 200px;
 }
 .texto8{
     grid-area: texto8;
@@ -458,12 +373,58 @@
     background-image: url(img/pipas3.JPG);
     background-size: cover;
     background-position: center;
+    height: 200px;
 }
 .texto9{
     grid-area: texto9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 } 
+
+@media only screen and (min-width:768px) {
+    .productos{
+        height: 800px;
+        width: 97%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 50px 250px 50px 250px 50px;
+        grid-template-areas: 
+        "img1 img2 img3"
+        "texto1 texto2 texto3"
+        "img4 img5 img6"
+        "texto4 texto5 texto6"
+        "img7 img8 img9"
+        "texto7 texto8 texto9";
+        grid-gap: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+    
+      }
+    }
+@media only screen and (min-width:480px) and (max-width: 768px) {
+        .productos{
+            height: 800px;
+            width: 97%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 250px 50px 250px 50px 250px 50px 250px 50px 250px ;
+            grid-template-areas: 
+            "img1 img2"
+            "texto1 texto2"
+            "img3 img4"
+            "texto3 texto4"
+            "img5 img6"
+            "texto5 texto6"
+            "img7" "img8"
+            "texto7" "texto8"
+            "img9" "texto9";
+            grid-gap: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+        
+          }
+      }
+
 
 
 
