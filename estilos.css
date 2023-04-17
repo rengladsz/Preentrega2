@@ -27,6 +27,7 @@
 .nav-link{
     font-family: SourceSans;
     font-size: 20px;
+    font-weight: bold;
 }
 
 /* slideshow */
@@ -53,9 +54,6 @@
     text-align: center;
 
 }
-
-
-
 
 
 
@@ -397,8 +395,34 @@
           }
       }
 
-/* css sobrehumo */
+/* css contacto */
 
+.contacto{
+    padding: 30px;
+    font-family: SourceSans;
+}
+.contacto h3{
+    font-size: 40px;
+    font-family: SourceSans;
+    font-weight: bold;
+}
+
+/* css como comprar */
+.comocomprar{
+   padding: 30px;
+   font-family: SourceSans;
+}
+.comocomprar h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.comocomprar p{
+    font-size: 20px;
+}
+.pasos{
+    font-size: 20px;
+    padding: 20px;
+}
 
 
 
