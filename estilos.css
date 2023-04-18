@@ -23,7 +23,7 @@
 
 .navbar-brand {
     font-family: Abstract;
-    font-size: 50px;
+    font-size: 40px;
     color: black;
 }
 
@@ -57,17 +57,17 @@
     font-size: 20px;
     margin-top: 50px;
     text-align: center;
+    list-style: none;
 
 }
 
-@media only screen and (max-width:480px){
-    .footer{
+@media only screen and (min-width:480px) and (max-width:768) {
+    .footer {
         text-align: center;
         width: 100%;
         margin: auto;
         font-size: 25px;
-        margin-top: 30px;
-        margin-right: 50px;
+        margin-top: 50px;
     }
 }
 
@@ -459,4 +459,41 @@
 .pasos {
     font-size: 20px;
     padding: 20px;
+}
+
+/* css sobre humo */
+
+.nleft {
+    height: 200px;
+    background-image: url(img/volume-g74e9da0a7_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+h3{
+    font-family: SourceSans;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.nright p{
+    font-family: SourceSans;
+    text-align: center;
+    font-size: 20px;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20px;
+    
+}
+.nright{
+    padding: 10px;
+}
+
+.tips{
+margin-top: 20px;
+text-align: center;
+font-family: SourceSans;
+margin-left: 10px;
 }
