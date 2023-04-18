@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,45 +7,50 @@
     font-family: Abstract;
     src: url(./fonts/aAbstractGroovy.ttf);
 }
+
 @font-face {
     font-family: SourceSans;
     src: url(./fonts/SourceSansPro-Light.ttf);
-} 
-
-
-
-.navbar{
-    background-color: bisque;
-    width: 100%;
 }
 
-.navbar-brand{
+
+
+.navbar {
+    background-color: bisque;
+    /* width: 100%; */
+    background-size: cover;
+}
+
+.navbar-brand {
     font-family: Abstract;
-    font-size: 60px;
+    font-size: 50px;
     color: black;
 }
-.nav-link{
+
+.nav-link {
     font-family: SourceSans;
     font-size: 20px;
     font-weight: bold;
 }
 
+
 /* slideshow */
 
-.slide img{
+.slide img {
     object-fit: cover;
     width: 100%;
     height: 400px !important;
     margin-top: 30px;
-    
+
 }
-.slide{
+
+.slide {
     width: 100vh;
     margin: 0;
 }
 
 /* footer */
-.footer{
+.footer {
     width: 100%;
     margin: auto;
     font-family: SourceSans;
@@ -55,6 +60,18 @@
 
 }
 
+@media only screen and (max-width:480px){
+    .footer{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        font-size: 25px;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+}
+
+
 
 
 
@@ -63,7 +80,7 @@
 
 
 
- /* .productos{
+/* .productos{
     height: 800px;
     width: 97%;
     display: grid;
@@ -189,57 +206,60 @@
 }  */
 
 
-.productos{
+.productos {
     height: auto;
     width: 97%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px 200px 50px;
-    grid-template-areas: 
-    "img1"
-    "texto1"
-    "img2"
-    "texto2"
-    "img3"
-    "texto3"
-    "img4"
-    "texto4"
-    "img5"
-    "texto5"
-    "img6"
-    "texto6"
-    "img7"
-    "texto7"
-    "img8"
-    "texto8"
-    "img9"
-    "texto9";
+    grid-template-areas:
+        "img1"
+        "texto1"
+        "img2"
+        "texto2"
+        "img3"
+        "texto3"
+        "img4"
+        "texto4"
+        "img5"
+        "texto5"
+        "img6"
+        "texto6"
+        "img7"
+        "texto7"
+        "img8"
+        "texto8"
+        "img9"
+        "texto9";
     grid-gap: 10px;
     padding: 20px;
     margin-bottom: 20px;
-  }
-  .img {
+}
+
+.img {
     height: 200px;
-    
-  }
-  .texto {
+
+}
+
+.texto {
     height: 60px;
     font-size: 16px;
-  }
-  .img:hover{
+}
+
+.img:hover {
     transform: scale(1.09);
     transition: all 0.9s;
 }
 
-.img1{
+.img1 {
     grid-area: img1;
     background-image: url(img/cenicero1.JPG);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     height: 200px;
 }
 
-.texto1{
+.texto1 {
     grid-area: texto1;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -247,7 +267,7 @@
     font-size: 16px;
 }
 
-.img2{
+.img2 {
     grid-area: img2;
     background-image: url(img/cenicero2.JPG);
     background-size: cover;
@@ -255,7 +275,7 @@
     height: 200px;
 }
 
-.texto2{
+.texto2 {
     grid-area: texto2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -263,7 +283,7 @@
     font-size: 16px;
 }
 
-.img3{
+.img3 {
     grid-area: img3;
     background-image: url(img/cenicero3.jpeg);
     background-size: cover;
@@ -271,159 +291,172 @@
     height: 200px;
 }
 
-.texto3{
+.texto3 {
     grid-area: texto3;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     height: 60px;
     font-size: 16px;
 }
-.img4{
+
+.img4 {
     grid-area: img4;
     background-image: url(img/cenicero4.jpeg);
     background-size: cover;
     background-position: center;
     height: 200px;
 }
-.texto4{
+
+.texto4 {
     grid-area: texto4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-.img5{
+
+.img5 {
     grid-area: img5;
     background-image: url(img/combo.JPG);
     background-size: cover;
     background-position: center;
     height: 200px;
 }
-.texto5{
+
+.texto5 {
     grid-area: texto5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-.img6{
+
+.img6 {
     grid-area: img6;
     background-image: url(img/cuenco.JPG);
     background-size: cover;
     background-position: center;
     height: 200px;
 }
-.texto6{
+
+.texto6 {
     grid-area: texto6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-.img7{
+
+.img7 {
     grid-area: img7;
     background-image: url(img/pipas1.JPG);
     background-size: cover;
     background-position: center;
     height: 200px;
 }
-.texto7{
+
+.texto7 {
     grid-area: texto7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-.img8{
+
+.img8 {
     grid-area: img8;
     background-image: url(img/pipas2.JPG);
     background-size: cover;
     background-position: center;
     height: 200px;
 }
-.texto8{
+
+.texto8 {
     grid-area: texto8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-.img9{
+
+.img9 {
     grid-area: img9;
     background-image: url(img/pipas3.JPG);
     background-size: cover;
     background-position: center;
     height: 200px;
 }
-.texto9{
+
+.texto9 {
     grid-area: texto9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-} 
+}
 
 @media only screen and (min-width:768px) {
-    .productos{
+    .productos {
         height: 800px;
         width: 97%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 250px 50px 250px 50px 250px 50px;
-        grid-template-areas: 
-        "img1 img2 img3"
-        "texto1 texto2 texto3"
-        "img4 img5 img6"
-        "texto4 texto5 texto6"
-        "img7 img8 img9"
-        "texto7 texto8 texto9";
+        grid-template-areas:
+            "img1 img2 img3"
+            "texto1 texto2 texto3"
+            "img4 img5 img6"
+            "texto4 texto5 texto6"
+            "img7 img8 img9"
+            "texto7 texto8 texto9";
         grid-gap: 20px;
         padding: 20px;
         margin-bottom: 20px;
-    
-      }
+
     }
+}
+
 @media only screen and (min-width:480px) and (max-width: 768px) {
-        .productos{
-            height: 800px;
-            width: 97%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 250px 50px 250px 50px 250px 50px 250px 50px 250px ;
-            grid-template-areas: 
+    .productos {
+        height: 800px;
+        width: 97%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 50px 250px 50px 250px 50px 250px 50px 250px;
+        grid-template-areas:
             "img1 img2"
             "texto1 texto2"
             "img3 img4"
             "texto3 texto4"
             "img5 img6"
             "texto5 texto6"
-            "img7" "img8"
-            "texto7" "texto8"
-            "img9" "texto9";
-            grid-gap: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-        
-          }
-      }
+            "img7 img8"
+            "texto7 texto8"
+            "img9 texto9";
+        grid-gap: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+    }
+}
 
 /* css contacto */
 
-.contacto{
+.contacto {
     padding: 30px;
     font-family: SourceSans;
 }
-.contacto h3{
+
+.contacto h3 {
     font-size: 40px;
     font-family: SourceSans;
     font-weight: bold;
 }
 
 /* css como comprar */
-.comocomprar{
-   padding: 30px;
-   font-family: SourceSans;
+.comocomprar {
+    padding: 30px;
+    font-family: SourceSans;
 }
-.comocomprar h3{
+
+.comocomprar h3 {
     font-size: 40px;
     font-weight: bold;
 }
-.comocomprar p{
+
+.comocomprar p {
     font-size: 20px;
 }
-.pasos{
+
+.pasos {
     font-size: 20px;
     padding: 20px;
 }
-
-
-
-
